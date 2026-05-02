@@ -70,12 +70,12 @@ export default function Hero() {
             <img
               src={data.profileImage}
               alt={data.name}
-              referrerPolicy="no-referrer"
               className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
-                if (target.src !== "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800") {
-                  target.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800";
+                const fallback = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800";
+                if (target.src !== fallback) {
+                  target.src = fallback;
                 }
               }}
             />
