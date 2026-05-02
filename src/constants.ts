@@ -29,7 +29,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "An IoT-enabled temperature-controlled cooling system for fish transportation, optimizing shelf life.",
       category: "Mechanical Engineering",
       tags: ["IoT", "Thermal Systems", "SolidWorks"],
-      imageUrl: "/fish_box_cooler.png",
+      imageUrl: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6?auto=format&fit=crop&q=80&w=800",
       projectUrl: "https://github.com/Ragulan-K/Third-Year-Project-",
     },
     {
@@ -38,7 +38,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "Designed a fully automated mechanical system for Kottu Roti preparation, improving efficiency and hygiene.",
       category: "Mechanical Engineering",
       tags: ["Automation", "Robotics", "CAD"],
-      imageUrl: "/kottu_machine.png",
+      imageUrl: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800",
       projectUrl: "https://github.com/Ragulan-K/Koththu-Roti-Machine-",
     },
     {
@@ -47,7 +47,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "Combining Computational Fluid Dynamics with Machine Learning for high-fidelity predictive modeling.",
       category: "Research",
       tags: ["CFD", "Scikit-Learn", "Python"],
-      imageUrl: "/final_year_project.png",
+      imageUrl: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=800",
       projectUrl: "https://github.com/Ragulan-K/FYP",
     },
     {
@@ -56,7 +56,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "Real-time monitoring system using ESP8266 and a custom Python GUI for production lines.",
       category: "Software Development",
       tags: ["ESP8266", "Python", "GUI"],
-      imageUrl: "/bottle_count.png",
+      imageUrl: "https://images.unsplash.com/photo-1631553127988-3486c429307d?auto=format&fit=crop&q=80&w=800",
     },
   ],
   experience: [
@@ -68,7 +68,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       location: "Malabe, Colombo",
       description: "Instructed laboratory sessions, assessed student reports, participated in departmental meetings, and supported academic responsibilities.",
       skills: ["Teaching", "Academic Oversight", "Laboratory Management"],
-      imageUrl: "/Ragul 1.jpg",
+      imageUrl: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800",
     },
     {
       id: "exp1",
@@ -125,7 +125,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       skills: ["Mathematics", "Physics"],
     },
   ],
-  version: 6,
+  version: 7,
   contact: {
     email: "e18269@eng.pdn.ac.lk",
     phone: "+94 76 573 4486",
