@@ -29,7 +29,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "An IoT-enabled temperature-controlled cooling system for fish transportation, optimizing shelf life.",
       category: "Mechanical Engineering",
       tags: ["IoT", "Thermal Systems", "SolidWorks"],
-      imageUrl: "/fish_box_cooler.png",
+      imageUrl: "/Fish Box cooler.png",
       projectUrl: "https://github.com/Ragulan-K/Third-Year-Project-",
     },
     {
@@ -38,7 +38,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "Designed a fully automated mechanical system for Kottu Roti preparation, improving efficiency and hygiene.",
       category: "Mechanical Engineering",
       tags: ["Automation", "Robotics", "CAD"],
-      imageUrl: "/kottu_machine.png",
+      imageUrl: "/Koththu Roti Making machine.png",
       projectUrl: "https://github.com/Ragulan-K/Koththu-Roti-Machine-",
     },
     {
@@ -47,7 +47,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "Combining Computational Fluid Dynamics with Machine Learning for high-fidelity predictive modeling.",
       category: "Research",
       tags: ["CFD", "Scikit-Learn", "Python"],
-      imageUrl: "/final_year_project.png",
+      imageUrl: "/Final Year project.png",
       projectUrl: "https://github.com/Ragulan-K/FYP",
     },
     {
@@ -56,7 +56,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "Real-time monitoring system using ESP8266 and a custom Python GUI for production lines.",
       category: "Software Development",
       tags: ["ESP8266", "Python", "GUI"],
-      imageUrl: "/bottle_count.png",
+      imageUrl: "/Smart bottle count.png",
     },
   ],
   experience: [
@@ -125,7 +125,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       skills: ["Mathematics", "Physics"],
     },
   ],
-  version: 8,
+  version: 9,
   contact: {
     email: "e18269@eng.pdn.ac.lk",
     phone: "+94 76 573 4486",

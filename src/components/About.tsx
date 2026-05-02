@@ -64,7 +64,7 @@ export default function About() {
 
             <motion.div variants={itemVariants} className="pt-4">
               <a 
-                href="/cv.pdf" 
+                href="/CV.pdf" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary inline-flex items-center gap-2"
