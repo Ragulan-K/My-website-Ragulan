@@ -89,9 +89,20 @@ export default function Projects() {
                   </div>
 
                   <div className="flex items-center gap-4 pt-4 border-t border-gray-50">
-                    <button className="text-sm font-bold flex items-center gap-1.5 text-primary-600 hover:text-primary-700">
-                      View Project <ExternalLink size={14} />
-                    </button>
+                    {project.projectUrl ? (
+                      <a 
+                        href={project.projectUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm font-bold flex items-center gap-1.5 text-primary-600 hover:text-primary-700 transition-colors"
+                      >
+                        View Project <ExternalLink size={14} />
+                      </a>
+                    ) : (
+                      <button className="text-sm font-bold flex items-center gap-1.5 text-gray-400 cursor-not-allowed">
+                        View Project <ExternalLink size={14} />
+                      </button>
+                    )}
                     <button className="text-sm font-bold flex items-center gap-1.5 text-gray-400 hover:text-gray-600">
                       Details <Info size={14} />
                     </button>

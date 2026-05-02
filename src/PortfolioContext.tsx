@@ -13,6 +13,8 @@ interface PortfolioContextType {
   resetData: () => void;
   isAdmin: boolean;
   setIsAdmin: (value: boolean) => void;
+  activeSection: string;
+  setActiveSection: (value: string) => void;
 }
 
 const PortfolioContext = createContext<PortfolioContextType | undefined>(undefined);
@@ -22,6 +24,7 @@ const LOCAL_STORAGE_KEY = "ragulan_portfolio_data";
 export function PortfolioProvider({ children }: { children: ReactNode }) {
   const [data, setData] = useState<PortfolioData>(INITIAL_PORTFOLIO_DATA);
   const [isAdmin, setIsAdmin] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const savedData = localStorage.getItem(LOCAL_STORAGE_KEY);
@@ -54,7 +57,7 @@ export function PortfolioProvider({ children }: { children: ReactNode }) {
   };
 
   return (
-    <PortfolioContext.Provider value={{ data, updateData, resetData, isAdmin, setIsAdmin }}>
+    <PortfolioContext.Provider value={{ data, updateData, resetData, isAdmin, setIsAdmin, activeSection, setActiveSection }}>
       {children}
     </PortfolioContext.Provider>
   );

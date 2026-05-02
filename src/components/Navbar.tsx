@@ -9,7 +9,7 @@ import { Menu, X, Settings } from "lucide-react";
 import { usePortfolio } from "../PortfolioContext";
 
 export default function Navbar() {
-  const { data, setIsAdmin } = usePortfolio();
+  const { data, setIsAdmin, activeSection, setActiveSection } = usePortfolio();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -22,12 +22,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
-    { name: "Experience", href: "#experience" },
-    { name: "Education", href: "#education" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", id: "home" },
+    { name: "About", id: "about" },
+    { name: "Projects", id: "projects" },
+    { name: "Experience", id: "experience" },
+    { name: "Education", id: "education" },
+    { name: "Contact", id: "contact" },
   ];
 
   return (
@@ -48,13 +48,15 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
-            <a
+            <button
               key={link.name}
-              href={link.href}
-              className="text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors"
+              onClick={() => setActiveSection(link.id)}
+              className={`text-sm font-medium transition-colors ${
+                activeSection === link.id ? "text-primary-600 font-bold" : "text-gray-600 hover:text-primary-600"
+              }`}
             >
               {link.name}
-            </a>
+            </button>
           ))}
           <button
             onClick={() => setIsAdmin(true)}
@@ -87,14 +89,18 @@ export default function Navbar() {
       >
         <div className="flex flex-col space-y-4 px-6 py-8">
           {navLinks.map((link) => (
-            <a
+            <button
               key={link.name}
-              href={link.href}
-              onClick={() => setIsOpen(false)}
-              className="text-lg font-medium text-gray-600 hover:text-primary-600"
+              onClick={() => {
+                setActiveSection(link.id);
+                setIsOpen(false);
+              }}
+              className={`text-lg font-medium text-left ${
+                activeSection === link.id ? "text-primary-600 font-bold" : "text-gray-600 hover:text-primary-600"
+              }`}
             >
               {link.name}
-            </a>
+            </button>
           ))}
         </div>
       </motion.div>

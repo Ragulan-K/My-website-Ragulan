@@ -8,19 +8,19 @@ import { PortfolioData } from "./types";
 export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
   name: "Ragulan Karunanithi",
   role: "Hello, I'm Ragulan Karunanithi",
-  highlightRole: "Research Assistant | AI ML Enthusiast",
-  description: "Solving complex problems with machine learning and engineering innovations",
+  highlightRole: "MSc Student & Researcher at MNU | AI ML Enthusiast",
+  description: "Bridging Mechanical Engineering and Artificial Intelligence through high-fidelity simulations and predictive modeling.",
   profileImage: "/Ragul.jpg",
   about: {
-    whoIAm: "I am an adaptable and responsible graduate seeking an entry-level position in engineering that will utilize the technical and creative skills developed as an undergraduate during professional training sessions. I have a clear, logical mind with a practical approach to problem-solving and a drive to see things through to completion.",
-    whatIDo: "Specializing in Machine Learning and Computer Vision applications within the engineering domain, focusing on predictive modeling and automation.",
-    careerObjectives: "Seeking roles as ML Engineer, Automobile Engineer, or AI Engineer roles where I can contribute to engineering innovations.",
+    whoIAm: "I am an MSc student and Researcher at Mokpo National University (MNU), South Korea. My work lies at the intersection of Mechanical Engineering and Data Science, where I leverage computational tools to solve real-world problems.",
+    whatIDo: "Specializing in CFD analysis, Digital Twins, and Machine Learning integration for advanced mechanical systems.",
+    careerObjectives: "Committed to advancing engineering through AI-driven innovation and research excellence.",
   },
   skills: [
     { category: "Programming", items: ["Python", "MATLAB", "C++"] },
     { category: "Engineering Design", items: ["SOLIDWORKS", "Ansys"] },
-    { category: "Technical Skills", items: ["CFD", "Statistical Analysis", "Predictive Modeling"] },
-    { category: "Soft Skills", items: ["Problem Solving", "Leadership", "Team Building"] },
+    { category: "Technical Skills", items: ["CFD", "Machine Learning", "Predictive Modeling", "AI"] },
+    { category: "Soft Skills", items: ["Problem Solving", "Technical Research", "Academic Leadership"] },
   ],
   projects: [
     {
@@ -29,7 +29,8 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "An IoT-enabled temperature-controlled cooling system for fish transportation, optimizing shelf life.",
       category: "Mechanical Engineering",
       tags: ["IoT", "Thermal Systems", "SolidWorks"],
-      imageUrl: "https://images.unsplash.com/photo-1519750783826-e2420f4d687f?auto=format&fit=crop&q=80&w=800",
+      imageUrl: "/fish_box_cooler.png",
+      projectUrl: "https://github.com/Ragulan-K/Third-Year-Project-",
     },
     {
       id: "2",
@@ -37,7 +38,8 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "Designed a fully automated mechanical system for Kottu Roti preparation, improving efficiency and hygiene.",
       category: "Mechanical Engineering",
       tags: ["Automation", "Robotics", "CAD"],
-      imageUrl: "https://images.unsplash.com/photo-1547514701-42784112450f?auto=format&fit=crop&q=80&w=800",
+      imageUrl: "/kottu_machine.png",
+      projectUrl: "https://github.com/Ragulan-K/Koththu-Roti-Machine-",
     },
     {
       id: "3",
@@ -45,7 +47,8 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "Combining Computational Fluid Dynamics with Machine Learning for high-fidelity predictive modeling.",
       category: "Research",
       tags: ["CFD", "Scikit-Learn", "Python"],
-      imageUrl: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=800",
+      imageUrl: "/final_year_project.png",
+      projectUrl: "https://github.com/Ragulan-K/FYP",
     },
     {
       id: "4",
@@ -53,7 +56,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "Real-time monitoring system using ESP8266 and a custom Python GUI for production lines.",
       category: "Software Development",
       tags: ["ESP8266", "Python", "GUI"],
-      imageUrl: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800",
+      imageUrl: "/bottle_count.png",
     },
   ],
   experience: [
@@ -70,11 +73,11 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
     {
       id: "exp1",
       date: "Sep 15, 2024 - May 15, 2025",
-      role: "Research Assistant",
-      organization: "University of Peradeniya & Mokpo National University",
-      location: "Collaborative Project",
-      description: "Creation of a digital twin for centrifugal pumps, starting with 3D modeling, ICEM meshing and ANSYS CFX simulations.",
-      skills: ["Digital Twin", "ANSYS CFX", "3D Modeling"],
+      role: "MSc Student & Researcher",
+      organization: "Mokpo National University",
+      location: "South Korea",
+      description: "Working on CFD analysis and AI-driven predictive modeling for mechanical systems.",
+      skills: ["Digital Twin", "ANSYS CFX", "3D Modeling", "AI/ML"],
     },
     {
       id: "exp2",
@@ -122,7 +125,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       skills: ["Mathematics", "Physics"],
     },
   ],
-  version: 2,
+  version: 6,
   contact: {
     email: "e18269@eng.pdn.ac.lk",
     phone: "+94 76 573 4486",
