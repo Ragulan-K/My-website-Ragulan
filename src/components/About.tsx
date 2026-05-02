@@ -6,6 +6,7 @@
 import { motion } from "motion/react";
 import { usePortfolio } from "../PortfolioContext";
 import { Download, CheckCircle2 } from "lucide-react";
+import cvFile from "../assets/cv.pdf";
 
 export default function About() {
   const { data } = usePortfolio();
@@ -64,7 +65,7 @@ export default function About() {
 
             <motion.div variants={itemVariants} className="pt-4">
               <a 
-                href="/CV.pdf" 
+                href={cvFile} 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary inline-flex items-center gap-2"

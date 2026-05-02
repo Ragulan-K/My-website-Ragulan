@@ -61,14 +61,6 @@ export default function Projects() {
                     src={project.imageUrl}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      const fallback = "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800";
-                      if (target.src !== fallback) {
-                        target.src = fallback;
-                        target.classList.add('opacity-50'); // Indicate it's a placeholder
-                      }
-                    }}
                   />
                   <div className="absolute top-4 left-4">
                     <span className="px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold text-primary-600 shadow-sm">

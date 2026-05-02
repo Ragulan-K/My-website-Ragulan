@@ -4,13 +4,18 @@
  */
 
 import { PortfolioData } from "./types";
+import profileImg from "./assets/ragulan-profile.jpg";
+import projectFishCooler from "./assets/fish-box-cooler.png";
+import projectKottuMachine from "./assets/kottu-machine.png";
+import projectFinalYear from "./assets/final-year-project.png";
+import projectBottleCount from "./assets/bottle-count.png";
 
 export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
   name: "Ragulan Karunanithi",
   role: "Hello, I'm Ragulan Karunanithi",
   highlightRole: "MSc Student & Researcher at MNU | AI ML Enthusiast",
   description: "Bridging Mechanical Engineering and Artificial Intelligence through high-fidelity simulations and predictive modeling.",
-  profileImage: "/Ragul.jpg",
+  profileImage: profileImg,
   about: {
     whoIAm: "I am an MSc student and Researcher at Mokpo National University (MNU), South Korea. My work lies at the intersection of Mechanical Engineering and Data Science, where I leverage computational tools to solve real-world problems.",
     whatIDo: "Specializing in CFD analysis, Digital Twins, and Machine Learning integration for advanced mechanical systems.",
@@ -29,7 +34,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "An IoT-enabled temperature-controlled cooling system for fish transportation, optimizing shelf life.",
       category: "Mechanical Engineering",
       tags: ["IoT", "Thermal Systems", "SolidWorks"],
-      imageUrl: "/Fish Box cooler.png",
+      imageUrl: projectFishCooler,
       projectUrl: "https://github.com/Ragulan-K/Third-Year-Project-",
     },
     {
@@ -38,7 +43,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "Designed a fully automated mechanical system for Kottu Roti preparation, improving efficiency and hygiene.",
       category: "Mechanical Engineering",
       tags: ["Automation", "Robotics", "CAD"],
-      imageUrl: "/Koththu Roti Making machine.png",
+      imageUrl: projectKottuMachine,
       projectUrl: "https://github.com/Ragulan-K/Koththu-Roti-Machine-",
     },
     {
@@ -47,7 +52,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "Combining Computational Fluid Dynamics with Machine Learning for high-fidelity predictive modeling.",
       category: "Research",
       tags: ["CFD", "Scikit-Learn", "Python"],
-      imageUrl: "/Final Year project.png",
+      imageUrl: projectFinalYear,
       projectUrl: "https://github.com/Ragulan-K/FYP",
     },
     {
@@ -56,7 +61,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       description: "Real-time monitoring system using ESP8266 and a custom Python GUI for production lines.",
       category: "Software Development",
       tags: ["ESP8266", "Python", "GUI"],
-      imageUrl: "/Smart bottle count.png",
+      imageUrl: projectBottleCount,
     },
   ],
   experience: [
@@ -68,7 +73,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       location: "Malabe, Colombo",
       description: "Instructed laboratory sessions, assessed student reports, participated in departmental meetings, and supported academic responsibilities.",
       skills: ["Teaching", "Academic Oversight", "Laboratory Management"],
-      imageUrl: "/Ragul.jpg",
+      imageUrl: profileImg,
     },
     {
       id: "exp1",
@@ -125,7 +130,7 @@ export const INITIAL_PORTFOLIO_DATA: PortfolioData = {
       skills: ["Mathematics", "Physics"],
     },
   ],
-  version: 9,
+  version: 10,
   contact: {
     email: "e18269@eng.pdn.ac.lk",
     phone: "+94 76 573 4486",
